@@ -3,7 +3,7 @@ import { ArrowRight, ChevronRight, Zap, Activity } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-brand-dark transition-colors duration-300">
+    <section id="hero" className="relative min-h-screen flex items-center pt-32 overflow-hidden bg-brand-dark transition-colors duration-300">
 
       {/* Dynamic Animated Grid Background */}
       <div className="absolute inset-0 z-0 overflow-hidden perspective-[1000px]">
