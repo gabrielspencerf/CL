@@ -30,11 +30,12 @@ export const getStrategicStream = async (
   history: { role: 'user' | 'ai'; content: string }[],
   newMessage: string
 ) => {
-  if (!process.env.API_KEY) {
-    throw new Error("API_KEY is missing.");
+  // Use Vite environment variable
+  if (!import.meta.env.VITE_API_KEY) {
+    throw new Error("API_KEY is missing. Please check .env file.");
   }
 
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
 
   // Prevent context window overflow and ensure performance over long chats
   // We take the last 30 messages to maintain recent context

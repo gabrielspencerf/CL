@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://creativelane.io/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 0
+
+# Disallow admin areas (if any in the future)
+# Disallow: /admin/
